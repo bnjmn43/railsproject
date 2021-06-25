@@ -1,4 +1,4 @@
-class AddUseridToPosts < ActiveRecord::Migration[6.1]
+class AddUseridToPosts < ActiveRecord::Migration[5.2]
   def change
     add_column :posts, :user_id, :integer
   end
