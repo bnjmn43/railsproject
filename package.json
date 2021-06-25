@@ -1,86 +1,66 @@
 {
-  "_from": "supports-color@^6.1.0",
-  "_id": "supports-color@6.1.0",
+  "_from": "@babel/plugin-proposal-nullish-coalescing-operator@^7.14.5",
+  "_id": "@babel/plugin-proposal-nullish-coalescing-operator@7.14.5",
   "_inBundle": false,
-  "_integrity": "sha512-qe1jfm1Mg7Nq/NSh6XE24gPXROEVsWHxC1LIx//XNlD9iw7YZQGjZNjYN7xGaEG6iKdA8EtNFW6R0gjnVXp+wQ==",
-  "_location": "/supports-color",
+  "_integrity": "sha512-gun/SOnMqjSb98Nkaq2rTKMwervfdAoz6NphdY0vTfuzMfryj+tDGb2n6UkDKwez+Y8PZDhE3D143v6Gepp4Hg==",
+  "_location": "/@babel/plugin-proposal-nullish-coalescing-operator",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "supports-color@^6.1.0",
-    "name": "supports-color",
-    "escapedName": "supports-color",
-    "rawSpec": "^6.1.0",
+    "raw": "@babel/plugin-proposal-nullish-coalescing-operator@^7.14.5",
+    "name": "@babel/plugin-proposal-nullish-coalescing-operator",
+    "escapedName": "@babel%2fplugin-proposal-nullish-coalescing-operator",
+    "scope": "@babel",
+    "rawSpec": "^7.14.5",
     "saveSpec": null,
-    "fetchSpec": "^6.1.0"
+    "fetchSpec": "^7.14.5"
   },
   "_requiredBy": [
-    "/@rails/webpacker/webpack-cli",
-    "/postcss"
+    "/@babel/preset-env"
   ],
-  "_resolved": "https://registry.npmjs.org/supports-color/-/supports-color-6.1.0.tgz",
-  "_shasum": "0764abc69c63d5ac842dd4867e8d025e880df8f3",
-  "_spec": "supports-color@^6.1.0",
-  "_where": "/home/bnjmn43/rails2/node_modules/postcss",
+  "_resolved": "https://registry.npmjs.org/@babel/plugin-proposal-nullish-coalescing-operator/-/plugin-proposal-nullish-coalescing-operator-7.14.5.tgz",
+  "_shasum": "ee38589ce00e2cc59b299ec3ea406fcd3a0fdaf6",
+  "_spec": "@babel/plugin-proposal-nullish-coalescing-operator@^7.14.5",
+  "_where": "/home/bnjmn43/rails2/node_modules/@babel/preset-env",
   "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
+    "name": "The Babel Team",
+    "url": "https://babel.dev/team"
   },
-  "browser": "browser.js",
   "bugs": {
-    "url": "https://github.com/chalk/supports-color/issues"
+    "url": "https://github.com/babel/babel/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
-    "has-flag": "^3.0.0"
+    "@babel/helper-plugin-utils": "^7.14.5",
+    "@babel/plugin-syntax-nullish-coalescing-operator": "^7.8.3"
   },
   "deprecated": false,
-  "description": "Detect whether a terminal supports color",
+  "description": "Remove nullish coalescing operator",
   "devDependencies": {
-    "ava": "^0.25.0",
-    "import-fresh": "^2.0.0",
-    "xo": "^0.23.0"
+    "@babel/core": "7.14.5",
+    "@babel/helper-plugin-test-runner": "7.14.5"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=6.9.0"
   },
-  "files": [
-    "index.js",
-    "browser.js"
-  ],
-  "homepage": "https://github.com/chalk/supports-color#readme",
+  "homepage": "https://babel.dev/docs/en/next/babel-plugin-proposal-nullish-coalescing-operator",
   "keywords": [
-    "color",
-    "colour",
-    "colors",
-    "terminal",
-    "console",
-    "cli",
-    "ansi",
-    "styles",
-    "tty",
-    "rgb",
-    "256",
-    "shell",
-    "xterm",
-    "command-line",
-    "support",
-    "supports",
-    "capability",
-    "detect",
-    "truecolor",
-    "16m"
+    "babel-plugin"
   ],
   "license": "MIT",
-  "name": "supports-color",
+  "main": "./lib/index.js",
+  "name": "@babel/plugin-proposal-nullish-coalescing-operator",
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chalk/supports-color.git"
+    "url": "git+https://github.com/babel/babel.git",
+    "directory": "packages/babel-plugin-proposal-nullish-coalescing-operator"
   },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "version": "6.1.0"
+  "version": "7.14.5"
 }
