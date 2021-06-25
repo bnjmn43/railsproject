@@ -1,93 +1,86 @@
 {
-  "_from": "postcss-place@^4.0.1",
-  "_id": "postcss-place@4.0.1",
+  "_from": "supports-color@^6.1.0",
+  "_id": "supports-color@6.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-Zb6byCSLkgRKLODj/5mQugyuj9bvAAw9LqJJjgwz5cYryGeXfFZfSXoP1UfveccFmeq0b/2xxwcTEVScnqGxBg==",
-  "_location": "/postcss-place",
+  "_integrity": "sha512-qe1jfm1Mg7Nq/NSh6XE24gPXROEVsWHxC1LIx//XNlD9iw7YZQGjZNjYN7xGaEG6iKdA8EtNFW6R0gjnVXp+wQ==",
+  "_location": "/supports-color",
   "_phantomChildren": {},
   "_requested": {
     "type": "range",
     "registry": true,
-    "raw": "postcss-place@^4.0.1",
-    "name": "postcss-place",
-    "escapedName": "postcss-place",
-    "rawSpec": "^4.0.1",
+    "raw": "supports-color@^6.1.0",
+    "name": "supports-color",
+    "escapedName": "supports-color",
+    "rawSpec": "^6.1.0",
     "saveSpec": null,
-    "fetchSpec": "^4.0.1"
+    "fetchSpec": "^6.1.0"
   },
   "_requiredBy": [
-    "/postcss-preset-env"
+    "/@rails/webpacker/webpack-cli",
+    "/postcss"
   ],
-  "_resolved": "https://registry.npmjs.org/postcss-place/-/postcss-place-4.0.1.tgz",
-  "_shasum": "e9f39d33d2dc584e46ee1db45adb77ca9d1dcc62",
-  "_spec": "postcss-place@^4.0.1",
-  "_where": "/home/bnjmn43/rails2/node_modules/postcss-preset-env",
+  "_resolved": "https://registry.npmjs.org/supports-color/-/supports-color-6.1.0.tgz",
+  "_shasum": "0764abc69c63d5ac842dd4867e8d025e880df8f3",
+  "_spec": "supports-color@^6.1.0",
+  "_where": "/home/bnjmn43/rails2/node_modules/postcss",
   "author": {
-    "name": "Jonathan Neal",
-    "email": "jonathantneal@hotmail.com"
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
   },
+  "browser": "browser.js",
   "bugs": {
-    "url": "https://github.com/jonathantneal/postcss-place/issues"
+    "url": "https://github.com/chalk/supports-color/issues"
   },
   "bundleDependencies": false,
   "dependencies": {
-    "postcss": "^7.0.2",
-    "postcss-values-parser": "^2.0.0"
+    "has-flag": "^3.0.0"
   },
   "deprecated": false,
-  "description": "Use a place-* shorthand for align-* and justify-* in CSS",
+  "description": "Detect whether a terminal supports color",
   "devDependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "babel-eslint": "^9.0.0",
-    "eslint": "^5.6.0",
-    "eslint-config-dev": "^2.0.0",
-    "postcss-tape": "^2.2.0",
-    "pre-commit": "^1.2.2",
-    "rollup": "^0.66.0",
-    "rollup-plugin-babel": "^4.0.3"
+    "ava": "^0.25.0",
+    "import-fresh": "^2.0.0",
+    "xo": "^0.23.0"
   },
   "engines": {
-    "node": ">=6.0.0"
-  },
-  "eslintConfig": {
-    "extends": "dev",
-    "parser": "babel-eslint"
+    "node": ">=6"
   },
   "files": [
-    "index.cjs.js",
-    "index.cjs.js.map",
-    "index.es.mjs",
-    "index.es.mjs.map"
+    "index.js",
+    "browser.js"
   ],
-  "homepage": "https://github.com/jonathantneal/postcss-place#readme",
+  "homepage": "https://github.com/chalk/supports-color#readme",
   "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin",
-    "shorthands",
-    "alignments",
-    "justifies",
-    "justify",
-    "aligns",
-    "contents",
-    "selfs"
+    "color",
+    "colour",
+    "colors",
+    "terminal",
+    "console",
+    "cli",
+    "ansi",
+    "styles",
+    "tty",
+    "rgb",
+    "256",
+    "shell",
+    "xterm",
+    "command-line",
+    "support",
+    "supports",
+    "capability",
+    "detect",
+    "truecolor",
+    "16m"
   ],
-  "license": "CC0-1.0",
-  "main": "index.cjs.js",
-  "module": "index.es.mjs",
-  "name": "postcss-place",
+  "license": "MIT",
+  "name": "supports-color",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonathantneal/postcss-place.git"
+    "url": "git+https://github.com/chalk/supports-color.git"
   },
   "scripts": {
-    "prepublishOnly": "npm test",
-    "pretest": "rollup -c .rollup.js --silent",
-    "test": "echo 'Running tests...'; npm run test:js && npm run test:tape",
-    "test:ec": "echint --ignore index.*.js test",
-    "test:js": "eslint *.js --cache --ignore-path .gitignore --quiet",
-    "test:tape": "postcss-tape"
+    "test": "xo && ava"
   },
-  "version": "4.0.1"
+  "version": "6.1.0"
 }
